@@ -27,8 +27,8 @@ function getRelativeTime(date) {
     return "just now";
 }
 
-function LaunchList({ searchQuery }) {
-    const { data, isLoading, error, fetchNextPage, hasNextPage, isFetchingNextPage } = useLaunches(searchQuery);
+function LaunchList({ searchQuery, selectedFilter }) {
+    const { data, isLoading, error, fetchNextPage, hasNextPage, isFetchingNextPage } = useLaunches(searchQuery, selectedFilter);
     const [expandedLaunchMissionName, setExpandedLaunchMissionName] = useState(null);
     const bottomRef = useRef(null);
 
@@ -100,12 +100,15 @@ function LaunchList({ searchQuery }) {
             <div ref={bottomRef} style={{ height: "10px", marginBottom: "20px" }}></div>
 
             {isFetchingNextPage && <Spinner color="#1976d2" />}
+
+            {!hasNextPage && <p className="end-of-list">End of list</p>}
         </div>
     );
 }
 
 LaunchList.propTypes = {
     searchQuery: PropTypes.string,
+    selectedFilter: PropTypes.string
 };
 
 export default LaunchList;
