@@ -1,0 +1,108 @@
+.launch-container {
+    width: 100%;
+    margin: auto;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.launch-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.launch-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.launch-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upcoming-status {
+    background-color: #9cf3ff;
+    color: black;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.success-status {
+    background-color: #22fa3f;
+    color: black;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.failed-status {
+    background-color: #ff3535;
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.view-btn {
+    background: #1976d2;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.view-btn-container {
+    display: flex;
+}
+
+.view-btn:hover {
+    background: #135ba1;
+}
+
+.launch-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-link {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.time-link p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.details {
+    display: flex;
+    gap: 20px;
+}
+
+.details img {
+    width: 100px;
+}
+
+.details p {
+    text-align: left;
+    font-size: 14px;
+}
